@@ -44,10 +44,10 @@ label{
 
 }
 .outside_photos img{
-    width: 400px;
-    height: 400px;
-}
-.outside_photos input{
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 300px;
+  min-height: 300px;
 }
 .outside_photos input:checked + img{
   z-index: 12;
@@ -210,6 +210,9 @@ p.ico{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+p.ico img{
+  
 }
 .small-details span p{
   color: #4e4e4e;
