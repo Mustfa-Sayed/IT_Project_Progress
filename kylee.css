@@ -208,6 +208,9 @@ label{
 }
 .small-details >span span{
   width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 p.ico{
   display: flex;
@@ -370,4 +373,8 @@ span.more a:hover{
 }
 .arrow{
   margin-left: 5px;
+}
+p.ico img{
+  width: 24px;
+  height: 24px;
 }
