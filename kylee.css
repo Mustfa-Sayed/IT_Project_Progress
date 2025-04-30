@@ -150,7 +150,7 @@ label{
     background-color: black;
 }
 .colors input:checked +label{
-  outline: solid black 0.5px;
+  padding:5px;
   border-radius: 50%;
 }
 .type{
