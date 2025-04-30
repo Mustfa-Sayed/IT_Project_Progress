@@ -28,6 +28,7 @@ label{
     align-items: center;
     margin: 25px;
     width: 1450px;
+    justify-content: space-evenly;
 }
 .photos{
     display: flex;
