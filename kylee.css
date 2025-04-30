@@ -4,6 +4,9 @@ body{
     margin: 0;
     /* height: 1080px; */
 }
+input{
+  display: none;
+}
 p{
   margin: 0;
 }
@@ -44,8 +47,8 @@ label{
 
 }
 .outside_photos img{
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 350px;
+  max-height: 350px;
   min-width: 300px;
   min-height: 300px;
 }
