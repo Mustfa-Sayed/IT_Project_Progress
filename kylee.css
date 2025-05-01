@@ -654,22 +654,260 @@ flex-grow: 0;
 
 }
 textarea {
-  width: 100%;
-  height: 50px;
-  border-radius: 25px;
-  background-color: var(--bg-black-100);
-  border: 1px solid var(--bg-black-50);
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 40px;
+  max-height: 40px;
+  border-radius: 8px;
+  border: 1px solid #cecece;
   padding: 10px 25px;
   font-size: 16px;
   overflow: unset;
-  color: var(--text-black-700);
+  color: #979797;
   transition: all 0.3s ease;
 }
-
+.form{
+  position: relative;
+}
+textarea:focus,
+textarea:valid{
+  border: solid 1px black;
+}
 .placeholder {
   position: absolute;
-  top: 12px;
-  left: 25px;
+  top: 20px;
+  left: 22px;
   cursor: default;
-  color: var(--text-black-700);
+  color: #979797;
+}
+textarea:focus ~ .placeholder,
+textarea:valid ~ .placeholder
+{
+    color: var(--skin-color);
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: 12px;
+    padding: 1px 9px;
+    border-radius: 15px;
+    border: black solid 1px;
+    background-color: white;
+    transform: translate(-8px, -28px) ;
+}
+.form{
+  margin-bottom: 15px;
+}
+
+.reviews .comments{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px 28px 24px 16px;
+gap: 40px;
+
+width: 100%;
+/* height: 208px; */
+
+background: #FAFAFA;
+border-radius: 10px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.comment{
+  display: flex
+  ;
+      flex-direction: row;
+      align-items: flex-start;
+      width: 100%;
+      border-bottom: solid 1px #7e7e7e8f;
+}
+.comment>img{
+  /* User Pic */
+
+width: 56px;
+height: 56px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-right: 15px;
+border-radius: 50%;
+
+}
+.comment .content{
+  /* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 1001px;
+height: 160px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+}
+.content .top{
+  /* Title+Stars */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 100%;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.top .name-date{
+/* Title+Data */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 74px;
+
+width: 100%;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.name-date{
+  /* Grace Carey */
+
+margin: 0 auto;
+width: 100%;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height, or 141% */
+display: flex;
+align-items: center;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.name-date .date{
+
+width: 114px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+display: flex;
+align-items: center;
+text-align: right;
+
+/* Main/Black */
+color: #000000;
+
+opacity: 0.2;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.com-stars{
+  /* Stars */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 116.55px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.com-stars img{
+  /* Star 1 */
+
+width: 24px;
+height: 24px;
+
+
+border-radius: 1.72519px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px -0.862595px;
+
+}
+.content .com-txt{
+width: 100%;
+height: 96px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+
+color: #7E7E7E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
 }
