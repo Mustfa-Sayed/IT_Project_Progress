@@ -378,3 +378,277 @@ p.ico img{
   width: 24px;
   height: 24px;
 }
+/* section three */
+.section-three{
+  margin: 40px 70px;
+  padding: 40px;
+}
+
+/* Overall Rating */
+.overall{
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+align-content: flex-start;
+padding: 0px;
+gap: 60px;
+width: 100%;
+height: 192px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+/* Overall Rating */
+.rate{
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 32px;
+justify-content: center;
+gap: 16px;
+
+width: 184px;
+height: 192px;
+
+background: #FAFAFA;
+border-radius: 25px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.rate span{
+  /* 4.8 */
+
+
+height: 56px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 56px;
+line-height: 56px;
+/* identical to box height, or 100% */
+text-align: center;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.rate p:first-of-type{
+  /* of 125 reviews */
+
+
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 16px;
+/* identical to box height, or 107% */
+text-align: center;
+
+/* Main/Black */
+color: #000000;
+
+opacity: 0.3;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+div.stars{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
+width: 120px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.cont{
+  order: 2;
+  width: 100%;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+}
+/* Star 1 */
+p.stars{
+margin: 0 auto;
+width: 24px;
+height: 24px;
+
+/* Auxiliary/Orange Stars */
+background: #FFB547;
+border-radius: 1.72519px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.schedule{
+  /* Schedule */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 876px;
+min-width: 390px;
+height: 176px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+}
+.schedule .level
+{
+  /* level */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 876px;
+height: 16px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+width: 100%;
+
+}
+.schedule .level .txt{
+  /* Excellent */
+
+width: 150px;
+height: 16px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 16px;
+/* identical to box height, or 89% */
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.schedule .level .bar
+{
+  /* Slider */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 664px;
+height: 5px;
+
+background: #D9D9D9;
+border-radius: 16px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+}
+.bar .percent{
+  /* Rectangle 39 */
+
+height: 5px;
+
+background: #FFB547;
+border-radius: 16px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.level .number{
+/* Reviews */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 30px;
+height: 16px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+color: #000000;
+text-align: right;
+opacity: 0.4;
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
