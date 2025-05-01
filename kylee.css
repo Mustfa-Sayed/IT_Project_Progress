@@ -247,6 +247,7 @@ p.ico{
   border: solid black 2px;
   transition-duration: 0.5s;
 }
+
 .buy:hover{
   background-color: black;
   color: white;
@@ -259,6 +260,7 @@ p.ico{
   color: white;
   transition-duration: 0.5s;
 }
+.other .bttn:hover,
 .cart:hover{
   background-color: white;
   color: black;
@@ -911,4 +913,229 @@ order: 1;
 align-self: stretch;
 flex-grow: 0;
 
+}
+
+/* Section Four  */
+.section-four {
+  margin: 60px;
+}
+.other{
+  /* Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 16px;
+
+/* width: 1120px;
+height: 432px; */
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.other .oth-product{
+  /* Product Card */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 24px 16px;
+gap: 16px;
+width: 22%;
+
+
+background: #F7F7F7;
+border-radius: 9px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+}
+.oth-product .top{
+  /* Top Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 8px;
+position: relative;
+
+/* width: 236px;
+height: 32px; */
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.oth-product .top img{
+  /* Icon/32px/Like */
+
+/* width: 32px;
+height: 32px; */
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+cursor: pointer;
+
+}
+.oth-product >img{
+  /* Icon/32px/Like */
+
+/* width: 32px;
+height: 32px; */
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+height: 160px;
+
+}
+.txt-button{
+  /* Text+Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+/* width: 236px;
+height: 160px; */
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.txt-button .name{
+  /* Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A) */
+
+/* width: 236px;
+height: 48px; */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+text-align: center;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.txt-button .price{
+  /* $1399 */
+
+/* width: 236px;
+height: 24px; */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+text-align: center;
+letter-spacing: 0.03em;
+
+/* Main/Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.txt-button .bttn{
+  /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 64px;
+gap: 8px;
+
+/* width: 188px;
+height: 48px; */
+
+/* Main/Black */
+background: #000000;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+text-decoration: none;
+color: white;
+border: solid 1px black;
+}
+.none{
+  position: absolute;
+  opacity: 0;
+}
+#heart{
+  display: none;
+}
+#heart2:checked + img,
+#heart3:checked + img,
+#heart4:checked + img,
+#heart:checked + img{
+  opacity: 0;
+  transition-duration: 0.5s;
+  }
+
+#heart2:checked +img+ .none,
+#heart3:checked +img+ .none,
+#heart4:checked +img+ .none,
+#heart:checked +img+.none{
+
+  opacity: 0.9;
+  transition-duration: 0.5s;
+}
+
+.oth-product .top label{
+  display: flex;
 }
