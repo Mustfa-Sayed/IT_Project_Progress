@@ -17,6 +17,103 @@ p{
 label{
   cursor: pointer;
 }
+.main-bar{
+  height: 80px;
+  width: 100%;
+   display: flex ;
+    justify-content: space-evenly;
+  border-bottom: solid #B5B5B5 1px;
+}
+textarea.text-search:valid,
+textarea.text-search:focus{
+  border: solid 1px black;
+}
+textarea.text-search:focus ~ .placeholder,
+textarea.text-search:valid ~ .placeholder
+{
+  transform: translate(-15px, -24px) !important;
+}
+textarea.text-search:focus ~ .se-icon,
+textarea.text-search:valid ~ .se-icon{
+  transform: translateX(20px);
+  transition-duration: 0.5s;
+  transition-delay: 0.1s ;
+}
+.logo >img{
+  cursor: pointer;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+.search-box .placeholder{
+  top: 16px !important;
+    left: 40px !important;
+}
+.search-box .text-search{
+  min-width: 70% !important;
+  max-width: 70% !important;
+  min-height: 30px;
+  max-height: 30px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 10px 10px 10px 80px;
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+  color: black;
+  transition: all 0.3s ease;
+  background-color: #f5f5f5;
+  line-height: 1.5;
+}
+.search img{
+  position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 5px;
+    translate: 2px -2px;
+}
+.search .search-box{
+  position: relative;
+  min-width: 100%;
+  max-width: 100%;
+}
+.search{
+  min-width: 20%;
+  max-width: 20%;
+}
+.main-bar .search{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.main-bar .pages{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pages p{
+  color: #4e4e4e;
+  cursor: pointer;
+}
+.pages p:hover{
+  color: #000000;
+}
+.pages .active{
+  color: black;
+}
+.main-bar .icons img{
+  cursor: pointer;
+}
+.main-bar .icons{
+  display: flex;
+      justify-content: space-around;
+      width: 6%;
+      align-items: center;
+}
 .section-two,
 .section-one{
     display: flex;
@@ -158,7 +255,7 @@ label{
     background-color: black;
 }
 .colors input:checked +label{
-  outline:1px solid;
+  transform: scale(110%);
   /* transition-duration: 0.5s; */
   border-radius: 50%;
 }
@@ -352,6 +449,7 @@ span.more a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px;
     color: black;
 }
 span.more a:hover{
@@ -655,7 +753,7 @@ order: 2;
 flex-grow: 0;
 
 }
-textarea {
+.form textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 40px;
@@ -664,7 +762,7 @@ textarea {
   border: 1px solid #cecece;
   padding: 10px 25px;
   font-size: 16px;
-  overflow: unset;
+  overflow: hidden;
   color: #979797;
   transition: all 0.3s ease;
 }
@@ -943,9 +1041,7 @@ flex-grow: 0;
 
 }
 .other .oth-product{
-  /* Product Card */
-
-/* Auto layout */
+margin-top: 15px;
 display: flex;
 flex-direction: column;
 align-items: center;
