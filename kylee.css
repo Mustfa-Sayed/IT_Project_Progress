@@ -771,7 +771,7 @@ flex-grow: 0;
 }
 textarea:focus,
 textarea:valid{
-  border: solid 1px black;
+  border: solid 1px #000000;
 }
 .placeholder {
   position: absolute;
