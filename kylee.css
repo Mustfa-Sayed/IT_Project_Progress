@@ -685,7 +685,7 @@ textarea:valid{
 textarea:focus ~ .placeholder,
 textarea:valid ~ .placeholder
 {
-    color: var(--skin-color);
+    color: black;
     font-weight: 500;
     transition: 0.5s;
     font-size: 12px;
