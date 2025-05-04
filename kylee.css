@@ -1,6 +1,6 @@
 body{
   font-family: 'Inter', sans-serif;
-    padding: 0;
+    padding: 1px ;
     margin: 0;
     /* height: 1080px; */
 }
@@ -23,6 +23,9 @@ label{
    display: flex ;
     justify-content: space-evenly;
   border-bottom: solid #B5B5B5 1px;
+  background-color: white;
+  z-index: 9999;
+  position: fixed;
 }
 textarea.text-search:valid,
 textarea.text-search:focus{
