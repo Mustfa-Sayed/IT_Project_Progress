@@ -38,7 +38,7 @@
     </div>
     <div class="section-one">
         <div class="product">
-            <div class="photos">
+            <div class="photos left">
                 <div class="outside_photos">
                     <input type="radio" name="out" id="o-st" checked>
                     <img src="photos/mobile/one.jpeg" class="outside main"alt="">
@@ -78,7 +78,7 @@
                 
                 
             </div>
-            <div class="buying">
+            <div class="buying right">
                 <div class="description">
                     <span class="device">Samsung S25 Ultra</span>
                     <span class="price">$1399 <s>$1499</s></span>
@@ -249,7 +249,7 @@
         </div>
     </div>
     <div class="section-two">
-        <div class="details">
+        <div class="details bottom">
             <span class="address">Details</span>
             <p class="s">Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is
                  the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and
@@ -327,7 +327,7 @@
         </span>
         <div class="reviews">
             <div class="overall">
-                <div class="rate">
+                <div class="rate left">
                     <span>4.8</span>
                     <p>of 200 reviews</p>
                     <div class="cont">
@@ -341,7 +341,7 @@
                     </div>
                 </div>
                 
-                <div class="schedule">
+                <div class="schedule right">
                     <div class="level">
                         <p class="txt">Excellent</p>
                         <span class="bar"><p class="percent" style="width: 80%;"></p></span>
@@ -369,13 +369,13 @@
                     </div>
                 </div>
             </div>
-            <div class="form">
+            <div class="form bottom">
                 <textarea id="comment" class="text" required placeholder=""></textarea>
                 <label for="comment" class="placeholder">
                     Comment
                 </label>
             </div>
-            <div class="comments">
+            <div class="comments bottom">
                 
                 <div class="comment">
                     <div class="user">
@@ -476,7 +476,7 @@
         <span class="address">
             Related Products
         </span>
-        <div class="other">
+        <div class="other bottom">
             <div class="oth-product">
                 <div class="top">
                     <label for="heart" class="top">
@@ -541,5 +541,31 @@
             </div>
         </div>
     </div>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.right, .left, .bottom');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains('right')) {
+          entry.target.classList.add('slide-in-right');
+        } else if (entry.target.classList.contains('left')) {
+          entry.target.classList.add('slide-in-left');
+        } else if (entry.target.classList.contains('bottom')) {
+          entry.target.classList.add('slide-in-bottom');
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+
+    </script>
 </body>
 </html>
