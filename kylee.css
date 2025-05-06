@@ -1427,6 +1427,14 @@ footer .us{
     grid-template-rows: repeat(2,49%);
   }
 }
+.accounts{
+  width: 6%;
+    display: flex
+;
+gap: 5px;
+align-items: center;
+    justify-content: space-between;
+}
 @media(max-width:650px) {
   .side_imgs img {
     width: 80px;
