@@ -150,7 +150,7 @@ div.logo{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 40px 0px;
+  /* margin: 40px 0px; */
 }
 .product{
   
@@ -1326,7 +1326,6 @@ footer{
     background-color: #000000;
     color: white  ;
     width: 100%;
-    padding: 1px;
     
 }
 footer .us{
@@ -1506,6 +1505,9 @@ footer .us{
   .other .oth-product{
     padding: 10px;
   }
-  
+  .accounts{
+    display: flex;
+    flex-direction: column;
+  }
 
 }
