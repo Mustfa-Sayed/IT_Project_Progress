@@ -2,11 +2,18 @@ body{
   font-family: 'Inter', sans-serif;
     /* padding: 1px ; */
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* height: 1080px; */
     display: flex;
     flex-direction: column;
 
+}
+.section-four,
+.section-one,
+.section-two,
+.section-three,
+.comments{
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar
 {
@@ -1286,6 +1293,7 @@ border: solid 1px black;
 
 @keyframes slideRight {
   0% {
+    
     transform: translateX(100%); /* Start off the screen */
     opacity: 0;
   }
