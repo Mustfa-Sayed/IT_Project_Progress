@@ -2,7 +2,7 @@ body{
   font-family: 'Inter', sans-serif;
     /* padding: 1px ; */
     margin: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* height: 1080px; */
     display: flex;
     flex-direction: column;
@@ -1453,11 +1453,11 @@ align-items: center;
   .main-bar .search{
     display: none;
   }
-  .main-bar{
-    justify-content: space-between;
-  }
+    .main-bar{
+      justify-content: space-around;
+    }
   .main-bar .icons{
-    width: 30%;
+    width: 22%;
   }
   .type{
     justify-content:center;
@@ -1472,7 +1472,7 @@ align-items: center;
   span.more a{
     padding: 10px 20px;
   }
-  label[for="forth"]{
+  label[for="first"]{
     display: none;
   }
   .description .buttons{
@@ -1537,4 +1537,7 @@ align-items: center;
     flex-direction: column;
   }
 
+}
+a{
+  outline: none;
 }
